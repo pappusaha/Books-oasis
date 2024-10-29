@@ -3,8 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <div className="navbar bg-base-100">
-        <div className="navbar-start">
+        <div className="navbar  bg-base-100 shadow-lg z-10 fixed  px-4   sm:px-8 ">
+        <div className="navbar-start "> 
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -26,18 +26,18 @@ const Nav = () => {
               <li > <NavLink to={'/'}   
                className={({ isActive }) => isActive
         ? "text-[#23BE0A] font-bold" // Active style
-        : "text-gray-500"             // Inactive style
+        : "text-gray-500 font-bold"             // Inactive style
     }> Home</NavLink>  </li>
             
               <li> <NavLink to={'/listedbooks'} 
               className={({ isActive }) =>isActive
         ? "text-[#23BE0A] font-bold border-2 border-solid border-[#23BE0A]" // Active style
-        : "text-[#131313CC]"             // Inactive style
+        : "text-[#131313CC] font-bold"             // Inactive style
     } > Listed book</NavLink> </li>
               <li> <NavLink to={'/pagestoread'} 
               className={({ isActive }) =>isActive
         ? "text-[#23BE0A] font-bold border-2 border-solid border-[#23BE0A]" // Active style
-        : "text-[#131313CC]"  // Inactive style
+        : "text-[#131313CC] font-bold"  // Inactive style
     }> Pages to read</NavLink> </li>
             </ul>
           </div>

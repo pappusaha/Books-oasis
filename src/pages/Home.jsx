@@ -5,7 +5,9 @@ import Hero from "../Default/Hero";
 const Home = () => {
     return (
         <div >
-           <Hero></Hero>
+          <div className="">
+          <Hero></Hero>
+          </div>
 <Books></Books>
 
         </div>
