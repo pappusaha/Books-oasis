@@ -1,5 +1,9 @@
 import React from 'react';
-import {  NavLink, useLoaderData, useParams } from 'react-router-dom';
+import {   useLoaderData, useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+import { saveBooks } from '../localStorage/localStorage';
 
 const BookDetails = ({}) => {
     const booksData=useLoaderData()
@@ -9,6 +13,12 @@ const BookDetails = ({}) => {
   console.log(bookData)
 
   const {bookName,author,category,tags, image,review,totalPages,rating,publisher,yearOfPublishing}=bookData
+
+
+  const handleStoredBooks=(type)=> {
+    saveBooks(idint,type)
+   
+}
     return (
         <div className='pt-20'>
     {/* main book details */}
@@ -37,8 +47,10 @@ const BookDetails = ({}) => {
     <p></p>
 </div>
 <div className='flex space-x-2'>
- <button className='button-2 bg-slate-500 text-black p-3'>Read </button>
- <button className='button-2 bg-slate-500 text-black p-3'> Wish List</button>
+<button onClick={() => handleStoredBooks('read')} className='button-2 bg-slate-500 text-black p-3'>Read</button>
+ <ToastContainer />
+ <button onClick={() => handleStoredBooks('wish')} className='button-2 bg-slate-500 text-black p-3'>Wish List</button>
+ <ToastContainer />
 </div>
     </div>
    </div>
