@@ -37,7 +37,8 @@ export const router =createBrowserRouter([
 
               {
                 path:`/listedbooks/wishlist`, 
-                element:<WishList></WishList>,   
+                element:<WishList></WishList>, 
+                loader: () => fetch('/books.json')  
                         
               
               },

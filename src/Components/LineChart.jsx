@@ -1,8 +1,9 @@
 import React from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid , Tooltip,   } from 'recharts';
-// import { scaleOrdinal } from "d3-scale";
+
 
 const LineChart = ({ bookDetail }) => {
+
   const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
   const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -37,7 +38,7 @@ const LineChart = ({ bookDetail }) => {
       <Tooltip />
       <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
         {bookDetail.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+          <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
         ))}
       </Bar>
     </BarChart>

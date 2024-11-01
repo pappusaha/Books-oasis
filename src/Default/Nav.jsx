@@ -41,7 +41,7 @@ const Nav = () => {
     }> Pages to read</NavLink> </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl ">Book Oasis</a>
+          <NavLink to={'/'} className="btn btn-ghost text-xl ">Book Oasis</NavLink>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1  flex justify-center items-center space-x-3">
