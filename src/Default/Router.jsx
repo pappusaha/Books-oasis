@@ -48,8 +48,9 @@ export const router =createBrowserRouter([
             
           },             
           {
-            path:'pagestoread', 
+            path:'/pagestoread', 
             element: <PagesToRead></PagesToRead>,
+            loader: () => fetch('/books.json'),
          
           }, 
           {
