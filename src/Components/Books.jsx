@@ -24,7 +24,7 @@ const Books = () => {
           </div>
 
    <div className={booksLenght ===books.length &&'hidden' }>
-   <button onClick={ () => setBookLenght(books.length)} > Show all</button>
+   <button onClick={ () => setBookLenght(books.length)} className='btn font-bold bg-lime-300 text-black' > Show all</button>
    </div>
 
 

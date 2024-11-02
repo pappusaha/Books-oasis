@@ -35,7 +35,7 @@ const WishList = () => {
     },[wishBooks])
 
     return (
-        <div>
+        <div className='pt-10'>
           {
 storeBook.map((wishBook,idx) => <WishListData key={idx} wishBook={wishBook}></WishListData>)
 

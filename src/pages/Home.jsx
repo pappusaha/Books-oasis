@@ -5,7 +5,7 @@ import Hero from "../Default/Hero";
 const Home = () => {
     return (
         <div >
-          <div className="">
+          <div className="pt-10">
           <Hero></Hero>
           </div>
 <Books></Books>
