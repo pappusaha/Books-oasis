@@ -20,40 +20,57 @@ const BookDetails = ({}) => {
    
 }
     return (
-        <div className='pt-20'>
+        <div className='pt-20 h-screen flex-grow'>
     {/* main book details */}
-   <div className='flex flex-col lg:flex-row w-10/12 mx-auto gap-4 '>
+   <div className='flex flex-col lg:flex-row w-full mx-auto gap-10 '>
     {/* image div */}
-<div className='border-2 bg-slate-300 '> 
-    <img className=' h-full bg-slate-300 ' src={image} alt="" />
+<div className=' bg-[#1313130D] lg:w-4/5 flex rounded-xl '> 
+    <img className='  bg-[#1313130D]  grow ' src={image} alt="" />
     </div>
     {/* end img div */}
 
     {/* start book details */}
-    <div>
-<h2></h2>
+    <div className='space-y-3'>
+<h2 className='font-bold lg:text-4xl text-black'>{bookName}</h2>
+<p className='font-bold'>By: {author}</p>
 <p></p>
-<p></p>
-<p>Review:</p>
-<div className=''>
-    <h5>Tag:</h5>
-    <p></p>
-    <p></p>
+<p className=''>Review:{review}</p>
+<div className=' flex space-x-3'>
+    <h5 className='font-bold  '>Tag: <span className='font-bold text-[#23BE0A] bg-[#23BE0A0D] rounded-xl'>{tags}</span></h5>
+    <p className='text-[#23BE0A] bg-[#23BE0A0D] rounded-xl w-20 font-bold'>#Identity</p>
+    
 </div>
-<div>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-</div>
-<div className='flex space-x-2'>
-<button onClick={() => handleStoredBooks('read')} className='button-2 bg-slate-500 text-black p-3'>Read</button>
- <ToastContainer />
- <button onClick={() => handleStoredBooks('wish')} className='button-2 bg-slate-500 text-black p-3'>Wish List</button>
- <ToastContainer />
-</div>
+<div className=' flex space-x-12'>
+
+  
+    <div className=''>
+        <p>Number of Pages:</p>
+        <p>Publisher:</p>
+        <p>Year of Publishing:</p>
+          <p>Rating:</p>
+       
     </div>
-   </div>
+    <div className=' '>
+    <p className=''>{totalPages}</p>
+    <p  className=''>{publisher}</p>
+        <p>{yearOfPublishing}</p>
+        <p>{rating}</p>
+    </div>
+
+  </div>
+    
+    <div className='flex space-x-4 mt-2'>
+<button type="button" onClick={() => handleStoredBooks('read')} className='text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'>Read</button>
+
+
+ <ToastContainer />
+ <button onClick={() => handleStoredBooks('wish')} className='text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800 p-3'>Wish List</button>
+ <ToastContainer />
+</div>
+</div>
+
+    </div>
+   
         </div>
     );
 };

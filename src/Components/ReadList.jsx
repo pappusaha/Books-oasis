@@ -5,10 +5,10 @@ const ReadList = ({book}) => {
     return (
         <div key={bookId} className='flex  flex-col lg:flex-row  space-y-3 mb-6 border p-5'>
         <div>
-        <img className='bg-slate-400  ' src={image} alt="" />  
+        <img className='bg-slate-400  lg:w-[230px] rounded-xl lg:h-[229px] mx-auto' src={image} alt="" />  
         </div>
         <div>
-          <h1 className='text-center lg:font-bold text-3xl text-black'>{bookName}</h1>
+          <h1 className=' text-xl font-bold lg:text-2xl text-black'>{bookName}</h1>
         
           <p className='text-[#131313CC] font-bold'>By:{author}</p>
         
