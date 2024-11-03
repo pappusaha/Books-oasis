@@ -7,12 +7,14 @@ const Mainlayout = () => {
     return (
         <div >
             <Nav></Nav>
-            <div className='w-11/12 mx-auto'>
+            <div className='w-11/12 mx-auto '>
             
             <Outlet></Outlet>
             </div>
         
-         <Footer></Footer>
+        <div className=''>
+        <Footer></Footer>
+        </div>
         </div>
     );
 };

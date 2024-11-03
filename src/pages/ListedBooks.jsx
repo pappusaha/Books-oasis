@@ -5,11 +5,11 @@ const ListedBooks = () => {
     const [tabindex, settabindex]=useState(0)
     return (
         <div className='pt-28'>
-       <div>
+       <div className=''>
        <h1 className="text-3xl font-bold text-center bg-[#1313130D] w-full p-4 rounded-md">Books</h1>
 
 
-<div className='text-center mt-8'>
+<div className='text-center mt-8 '>
    <div className="dropdown dropdown-bottom">
 <div tabIndex={0} role="button" className="btn m-1 text-center text-white bg-[#23BE0A]">Short by <IoIosArrowDown /></div>
 
@@ -49,8 +49,11 @@ onClick={() => settabindex(1)}  rel="noopener noreferrer" href="#" className={`f
 
 
 </div>
-</div>    
-<Outlet></Outlet>      
+</div>  
+<div className='min-h-[calc(100vh-449px)]'>
+<Outlet></Outlet>    
+    </div>  
+  
         </div>
     );
 };
