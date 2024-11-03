@@ -10,6 +10,9 @@ Currently, two official plugins are available:
 
 ## Libraries and Resources
 
+-[Live link](https://books-oassis-pappu.netlify.app/)
+
+
 - [React Router Dom](https://reactrouter.com/)
 - [Tailwind CSS Buttons](https://tailwindcss.com/docs/buttons)
 - [Mamba UI - Components](https://mambaui.com/)
