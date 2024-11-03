@@ -15,9 +15,10 @@ const ListedBooks = () => {
 
 
 
-<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-30 p-2 shadow">
-<li><a>Item 1</a></li>
-<li><a>Item 2</a></li>
+<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-40 p-2 shadow">
+<li><a>Rating</a></li>
+<li><a>Number of pages</a></li>
+<li><a>publisher Year</a></li>
 </ul>
 </div>
 </div>

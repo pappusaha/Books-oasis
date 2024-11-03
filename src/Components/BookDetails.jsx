@@ -34,7 +34,7 @@ const BookDetails = ({}) => {
 <h2 className='font-bold lg:text-4xl text-black'>{bookName}</h2>
 <p className='font-bold'>By: {author}</p>
 <p></p>
-<p className=''>Review:{review}</p>
+<p className=' text-[#131313]'>Review:{review}</p>
 <div className=' flex space-x-3'>
     <h5 className='font-bold  '>Tag: <span className='font-bold text-[#23BE0A] bg-[#23BE0A0D] rounded-xl'>{tags}</span></h5>
     <p className='text-[#23BE0A] bg-[#23BE0A0D] rounded-xl w-20 font-bold'>#Identity</p>
@@ -51,10 +51,10 @@ const BookDetails = ({}) => {
        
     </div>
     <div className=' '>
-    <p className=''>{totalPages}</p>
-    <p  className=''>{publisher}</p>
-        <p>{yearOfPublishing}</p>
-        <p>{rating}</p>
+    <p className='text-black font-medium'>{totalPages}</p>
+    <p  className='text-black font-medium'>{publisher}</p>
+        <p className='text-black font-medium'>{yearOfPublishing}</p>
+        <p className='text-black font-medium'>{rating}</p>
     </div>
 
   </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getStoredBooks } from '../localStorage/localStorage';
-import ReadList from './readlist';
+import ReadList from './ReadList';
 
 const ReadBooks = () => {
     const books=useLoaderData()
